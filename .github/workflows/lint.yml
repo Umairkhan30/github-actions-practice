@@ -9,7 +9,7 @@ on:
 
 
 jobs:
-  code:
+  code-linting:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout/Clone the code
@@ -18,3 +18,6 @@ jobs:
       # this step will install the linting tool
       - name: Install Linter
         run: pip install ruff
+      # this step will run the linter
+      - name: Check the files for linting
+        run: ruff .
