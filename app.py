@@ -1,6 +1,5 @@
 # This code is from https://github.com/Umairkhan30/github-actions-practice/edit/main/app.py
 # Flask App
-#Flask App
 from flask import Flask, render_template
 app = Flask(__name__)
 
